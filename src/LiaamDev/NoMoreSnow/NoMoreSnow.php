@@ -29,6 +29,13 @@ class NoMoreSnow extends PluginBase implements Listener {
 			for($z = 0; $z < 16; ++ $z)
 				$event->getChunk()->setBiomeId ( $x, $z, 29);
 	}
+		public function onPLayerJoin(PlayerJoinEvent $event) {
+		$player = $event->getPlayer ();
+		$pk = new LevelEventPacket ();
+		$pk->evid = 3001;
+		$pk->data = 10000;
+		$player->dataPacket ( $pk );
+	}
 }
 
 
