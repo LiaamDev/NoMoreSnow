@@ -1,0 +1,7 @@
+name: NoMoreSnow
+main: LiaamDev\NoMoreSnow\adiossnow
+version: 1.0
+description: Removes snow and snow biomes!
+author: LiaamDev
+api:
+- 3.0.0
